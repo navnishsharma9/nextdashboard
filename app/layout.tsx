@@ -1,5 +1,9 @@
 import '@/app/ui/global.css'
-import {inter} from '@/app/ui/fonts'
+
+export const metadata = {
+  title: 'DevTeam Studio | Scalable Web & Mobile Products',
+  description: 'A collaborative team of elite freelance developers. We build scalable web & mobile products.',
+};
 
 export default function RootLayout({
   children,
@@ -7,8 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang="en" className="dark">
+      <body className="font-sans antialiased bg-gray-950 text-gray-100">{children}</body>
     </html>
   );
 }
