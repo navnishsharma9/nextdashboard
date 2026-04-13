@@ -178,13 +178,13 @@ function MemberModal({ member, onClose }: { member: Member; onClose: () => void 
 
         {/* Social links */}
         <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-          <a href={member.github} target="_blank" rel="noopener noreferrer" className="flex-1 text-center font-open-sans text-sm text-gray-400 hover:text-white border border-white/10 hover:border-white/30 py-2 rounded-xl transition-all">
+          <a href={member.github} target="_blank" rel="noopener noreferrer" aria-label={`${member.name}'s GitHub profile`} className="flex-1 text-center font-open-sans text-sm text-gray-400 hover:text-white border border-white/10 hover:border-white/30 py-2 rounded-xl transition-all">
             GitHub
           </a>
-          <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="flex-1 text-center font-open-sans text-sm text-gray-400 hover:text-white border border-white/10 hover:border-white/30 py-2 rounded-xl transition-all">
+          <a href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${member.name}'s LinkedIn profile`} className="flex-1 text-center font-open-sans text-sm text-gray-400 hover:text-white border border-white/10 hover:border-white/30 py-2 rounded-xl transition-all">
             LinkedIn
           </a>
-          <a href={member.portfolio} target="_blank" rel="noopener noreferrer" className="flex-1 text-center font-poppins text-sm font-medium bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-2 rounded-xl hover:opacity-90 transition-all">
+          <a href={member.portfolio} target="_blank" rel="noopener noreferrer" aria-label={`${member.name}'s portfolio website`} className="flex-1 text-center font-poppins text-sm font-medium bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-2 rounded-xl hover:opacity-90 transition-all">
             Portfolio
           </a>
         </div>
